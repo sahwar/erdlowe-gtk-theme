@@ -1,4 +1,4 @@
-![banner](resources/erdlowegnomedesc_by_darthwound.png)
+![banner](artwork/erdlowegnomedesc_by_darthwound.png)
 
 VERSION 1.0 (built from materia-master 20180131)
 
