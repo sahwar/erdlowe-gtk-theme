@@ -1,4 +1,6 @@
 ![banner](resources/erdlowegnomedesc_by_darthwound.png)
+
+[Overview](#overview) - [Requirements](#requirements) - [Installation](#installation) - [Suggestions](#suggestions) - [Screenshots](#screenshots) - [Credits](#credits) - [FAQ](#faq)
 #
 #
 #
