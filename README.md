@@ -41,7 +41,7 @@
 - **Source Sans fonts**
   - `sudo zypper in adobe-source*pro-fonts` to install in openSUSE®
   
-- **Dconf** *(for install script)*
+- **Dconf** *(for install script and terminal scheme)*
   - `sudo zypper in dconf` to install in openSUSE®
   
 - **GNOME Tweaks tool** & "User themes" extension *(could be already installed)*
@@ -65,12 +65,12 @@ Screenshot of *install-erdlowe.sh* main page: [here](images/install.png?raw=true
 
 **Manual**
 
-Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases).
+Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), download then extract in themes folder.
 #
 #
 ## Suggestions
 
-**`Install script can install fonts and icons automatically if you use openSUSE®.`**
+**`Install script can install icons automatically. Fonts too, see "Requirements".`**
 
 - **Fonts:**
   - Window titles: Source Sans Pro bold 10
