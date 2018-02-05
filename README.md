@@ -90,6 +90,8 @@ Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases).
 **GNOME Terminal scheme:** *([screenshot](extras/erdlowe-terminal-screenshot.png?raw=true))*
 
 `wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/extras/erdlowe-terminal.sh | sh`
+
+*Note: it replaces default terminal theme, save your settings if you changed them.*
   
 **Gedit color scheme:** *([screenshot](extras/erdlowe-gedit-screenshot.png?raw=true))*
 
