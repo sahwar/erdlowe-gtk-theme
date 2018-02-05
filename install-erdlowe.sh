@@ -71,7 +71,7 @@ getsuggested() {
 	sleep 2s
 	wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-folders/master/install.sh | sh
 	sleep 2s
-	papirus-folders -C brown
+	papirus-folders -C grey
 	dconf write $ico "'Papirus'"
 	read -p "Done! Open 'GNOME Tweaks' app to change icons if you want. Press ENTER to close."
 }
