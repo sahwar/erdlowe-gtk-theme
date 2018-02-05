@@ -46,7 +46,7 @@
 
 /!\ Please check requirements before anything.
 
-Eventually, you could have to reboot after applying theme *(some GTK2 apps or Chrome for example)*.
+*Reboot after applying theme could be necessary for some GTK2 apps or Chrome.*
 
 **Auto**
 
@@ -56,7 +56,7 @@ Copy/paste this in user terminal and follow instructions:
 
 Select *"2) update"* instead of *"1) install"* if Erdlöwe is already installed.
 
-You could use an [alias in your bashrc](http://www.linuxhowtos.org/Tips%20and%20Tricks/command_aliases.htm) to call the script quickly.
+You may use an [alias in your bashrc](http://www.linuxhowtos.org/Tips%20and%20Tricks/command_aliases.htm) to call the script quickly.
 
 Screenshot of *install-erdlowe.sh* main page: [here](images/install.png?raw=true).
 
