@@ -46,21 +46,17 @@
 
 /!\ Please check requirements before anything.
 
-**First install**
+**Auto**
 
 Copy/paste this in user terminal and follow instructions:
 
-`wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install.sh | sh`
+`wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install-erdlowe.sh | sh`
 
-Or go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), download and extract archive, then put content in your themes directory *('~/.themes' or '/usr/share/themes')*.
+Screenshot of *install-erdlowe.sh* main page: [here](images/install.png?raw=true).
 
-**Later updates**
+**Manual**
 
-Copy/paste this in user terminal and follow instructions:
-
-`wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/update.sh | sh`
-
-Or go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), download and extract archive, then put content in your themes directory *('~/.themes' or '/usr/share/themes')*.
+Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases).
 #
 #
 ## Suggestions
