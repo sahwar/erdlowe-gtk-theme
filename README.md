@@ -64,6 +64,8 @@ Then, still in user terminal, run `~/.bin/erdlowe.sh`.
 **Manual**
 
 Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), download latest `erdlowe.tar.gz` then extract in themes folder.
+
+Archives from manual method only provide theme files. All other stuff have to be installed manually too.
 #
 #
 ## Suggestions
