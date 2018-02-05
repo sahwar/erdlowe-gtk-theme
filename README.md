@@ -15,7 +15,6 @@
 **Changes from Materia:**
   - Adobe "Source Sans Pro" fonts instead of Mplus and Roboto
   - Color scheme inspired by new openSUSE® branding and websites
-  - and... that's all, Materia is already perfectly tuned and keeps improving
 
 **Supported desktops:** GNOME3 only.
   - *Other GTK3/GTK2 desktops like Xfce *may* have weird issues as I didn't focus on them.*
@@ -45,12 +44,16 @@
 ## Installation
 
 **First install**
-- Copy/paste this in user terminal and follow instructions:
-  - `wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install.sh | sh`
+
+Copy/paste this in user terminal and follow instructions:
+
+`wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install.sh | sh`
 
 **Later updates**
-- Copy/paste this in user terminal and follow instructions:
-  - `wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/update.sh | sh`
+
+Copy/paste this in user terminal and follow instructions:
+
+`wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/update.sh | sh`
 
 ## Suggestions
 
@@ -60,9 +63,16 @@
   - Documents: Source Serif Pro regular 12
   - Monospace: Source Code Pro regular 12
 
-- **Icons:** [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) with [grey folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)
+- **Icons:**
+  - [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) with [grey folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)
 
-- **Extensions:** [Argos-DWS](https://github.com/DarthWound/Argos-DWS), [Darker Overview](https://extensions.gnome.org/extension/1177/darker-overview/), [Remove Arrows](https://extensions.gnome.org/extension/800/remove-dropdown-arrows/), [Overlay Icons](https://extensions.gnome.org/extension/302/windowoverlay-icons/), [Notifications Alerts](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/), [Appfolders Manager](https://extensions.gnome.org/extension/1217/appfolders-manager/).
+- **Extensions:**
+  - [Argos-DWS](https://github.com/DarthWound/Argos-DWS)
+  - [Darker Overview](https://extensions.gnome.org/extension/1177/darker-overview/)
+  - [Remove Arrows](https://extensions.gnome.org/extension/800/remove-dropdown-arrows/)
+  - [Overlay Icons](https://extensions.gnome.org/extension/302/windowoverlay-icons/)
+  - [Notifications Alerts](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
+  - [Appfolders Manager](https://extensions.gnome.org/extension/1217/appfolders-manager/).
 
 ## Extras
 
@@ -74,12 +84,15 @@
 
 ## Screenshots
 
+Standard variant + compact for shell:
 ![figure-global-standard](images/global-standard.png?raw=true)
 *`open image in new tab to see it fullsize and sharp`*
 
+Light variant + compact for shell:
 ![figure-global-light](images/global-light.png?raw=true)
 *`open image in new tab to see it fullsize and sharp`*
 
+Dark variant + compact for shell:
 ![figure-global-dark](images/global-dark.png?raw=true)
 *`open image in new tab to see it fullsize and sharp`*
 
@@ -94,7 +107,7 @@
 ## FAQ
 
 - **How to report issues?**
-  - Post something in [issues tab](https://github.com/DarthWound/erdlowe-theme/issues). Issues strictly regarding Materia must be reported on it's own page.
+  - Post something in [issues tab](https://github.com/DarthWound/erdlowe-theme/issues). Issues strictly regarding Materia must be reported on [it's own page](https://github.com/nana-4/materia-theme/issues).
 
 - **How to contribute?**
   - I usually don't accept pull requests, but I accept contributions that I inject later. Of course you're credited.
@@ -103,6 +116,7 @@
   - It requires a lot of work and I don't have that much spare time. Maybe later :-)
 
 - **Why not use -*insert famous theme*- as a base?**
+  - Materia is perfectly tuned and keeps improving.
   - Adwaita is too hard to tweak deeply, Arc already has [Geeko](https://github.com/LelCP/geeko-gtk-theme), and Adapta is based on Materia so...
 
 - **"Erdlöwe"? What does that mean?**
