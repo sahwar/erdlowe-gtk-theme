@@ -29,7 +29,7 @@
 #
 ## Requirements
 
-**`Install script can install them automatically if you use openSUSE®.`**
+**`Erdlöwe script can install them automatically if you use openSUSE®.`**
 
 - **GTK+** *(>=3.18, should be already installed)*
 
@@ -57,14 +57,9 @@
 
 Copy/paste the following commands in user terminal and follow instructions:
 
-```
-mkdir ~/.bin && cd ~/.bin
-wget -q https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install-erdlowe.sh
-chmod +x install-erdlowe.sh
-./install-erdlowe.sh
-```
+`wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install.sh | sh`
 
-You may use a [function in your bashrc](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-8.html) to call the script directly from your terminal next time.
+Then, still in user terminal, run `~/.bin/erdlowe.sh`.
 
 **Manual**
 
@@ -73,7 +68,7 @@ Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), down
 #
 ## Suggestions
 
-**`Install script can install icons automatically. Fonts too, see "Requirements".`**
+**`Erdlöwe script can install icons automatically. Fonts too, see "Requirements".`**
 
 - **Fonts:**
   - Window titles: Source Sans Pro bold 10
@@ -95,7 +90,7 @@ Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), down
 #
 ## Extras
 
-**`Install script can install them automatically.`**
+**`Erdlöwe script can install them automatically.`**
 
 **GNOME Terminal scheme:** *([screenshot](extras/erdlowe-terminal-screenshot.png?raw=true))*
 
