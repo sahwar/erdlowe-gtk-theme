@@ -55,11 +55,16 @@
 
 **Auto** *([screenshot](images/install.png?raw=true))*
 
-Copy/paste this in user terminal and follow instructions:
+Copy/paste the following commands in user terminal and follow instructions:
 
-`wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install-erdlowe.sh | sh`
+```
+mkdir ~/.bin && cd ~/.bin
+wget -q https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install-erdlowe.sh
+chmod +x install-erdlowe.sh
+./install-erdlowe.sh
+```
 
-You may use an [alias in your bashrc](http://www.linuxhowtos.org/Tips%20and%20Tricks/command_aliases.htm) to call the script directly from your terminal next time.
+You may use a [function in your bashrc](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-8.html) to call the script directly from your terminal next time.
 
 **Manual**
 
