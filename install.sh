@@ -1,6 +1,7 @@
 #!/bin/bash
-# Erdlöwe theme by DarthWound - install
+# Erdlöwe theme by DarthWound - install/update
 
+rm ~/.bin/erdlowe.sh # if a previous version is already installed
 mkdir ~/.bin
 wget -P ~/.bin https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/erdlowe.sh
 chmod +x ~/.bin/erdlowe.sh
