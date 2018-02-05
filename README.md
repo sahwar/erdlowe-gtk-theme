@@ -53,15 +53,13 @@
 
 *Reboot after applying theme could be necessary for some GTK2 apps or Chrome.*
 
-**Auto**
+**Auto** *([screenshot](images/install.png?raw=true))*
 
 Copy/paste this in user terminal and follow instructions:
 
 `wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install-erdlowe.sh | sh`
 
-You may use an [alias in your bashrc](http://www.linuxhowtos.org/Tips%20and%20Tricks/command_aliases.htm) to call the script quickly.
-
-Screenshot of *install-erdlowe.sh* main page: [here](images/install.png?raw=true).
+You may use an [alias in your bashrc](http://www.linuxhowtos.org/Tips%20and%20Tricks/command_aliases.htm) to call the script directly from your terminal next time.
 
 **Manual**
 
