@@ -138,7 +138,7 @@ Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), down
   - Post something in [issues tab](https://github.com/DarthWound/erdlowe-theme/issues). Issues strictly regarding Materia must be reported on [it's own page](https://github.com/nana-4/materia-theme/issues).
 
 - **How to contribute?**
-  - I usually don't accept pull requests, but I accept contributions that I inject later. Of course you're credited.
+  - Please, no pull requests, post contributions in [issues tab](https://github.com/DarthWound/erdlowe-theme/issues) so I can inject them later. Of course you'll be credited.
 
 - **Why not include other desktops?**
   - It requires a lot of work and I don't have that much spare time. Maybe later :-)
