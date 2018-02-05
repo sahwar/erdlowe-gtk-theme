@@ -15,7 +15,7 @@
   - Adobe "Source Sans Pro" fonts instead of Mplus and Roboto
   - Color scheme inspired by new openSUSE® branding and websites
 
-**Supported desktops:** GNOME3 only.
+**Supported desktops:** GNOME *(≤ 3.26)* only.
   - *Other GTK3/GTK2 desktops like Xfce *may* have weird issues as I didn't focus on them.*
   
 **Variations:**
