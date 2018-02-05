@@ -1,5 +1,5 @@
 #!/bin/bash
-# Erdlöwe theme by DarthWound
+# Erdlöwe theme by DarthWound - run
 
 version="v1.0-20180131"
 
