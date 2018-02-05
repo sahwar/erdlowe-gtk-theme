@@ -54,9 +54,7 @@ Copy/paste this in user terminal and follow instructions:
 
 Select *"2) update"* instead of *"1) install"* if Erdlöwe is already installed.
 
-You could use an [alias in your bashrc](http://www.linuxhowtos.org/Tips%20and%20Tricks/command_aliases.htm) to call the script quickly:
-
-`alias erdlowe="wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install-erdlowe.sh | sh"`
+You could use an [alias in your bashrc](http://www.linuxhowtos.org/Tips%20and%20Tricks/command_aliases.htm) to call the script quickly.
 
 
 Screenshot of *install-erdlowe.sh* main page: [here](images/install.png?raw=true).
