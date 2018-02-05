@@ -44,7 +44,7 @@
 - **Dconf** *(for install script and terminal scheme)*
   - `sudo zypper in dconf` to install in openSUSE®
   
-- **GNOME Tweaks tool** & "User themes" extension *(could be already installed)*
+- **GNOME Tweak tool** & "User themes" extension *(could be already installed)*
 #
 #
 ## Installation
