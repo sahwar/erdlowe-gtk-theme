@@ -76,23 +76,25 @@ Copy/paste this in user terminal and follow instructions:
 
 ## Extras
 
-- **GNOME Terminal scheme:** *([screenshot](extras/erdlowe-terminal-screenshot.png?raw=true))*
-  - `wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/extras/erdlowe-terminal.sh | sh`
+**GNOME Terminal scheme:** *([screenshot](extras/erdlowe-terminal-screenshot.png?raw=true))*
+
+`wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/extras/erdlowe-terminal.sh | sh`
   
-- **Gedit color scheme:** *([screenshot](extras/erdlowe-gedit-screenshot.png?raw=true))*
-  - `sudo wget -P /usr/share/gtksourceview-3.0/styles https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/extras/erdlowe-gedit.xml`
+**Gedit color scheme:** *([screenshot](extras/erdlowe-gedit-screenshot.png?raw=true))*
+
+`sudo wget -P /usr/share/gtksourceview-3.0/styles https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/extras/erdlowe-gedit.xml`
 
 ## Screenshots
 
-Standard variant + compact for shell:
+**Standard variant + compact for shell:**
 ![figure-global-standard](images/global-standard.png?raw=true)
 *`open image in new tab to see it fullsize and sharp`*
 
-Light variant + compact for shell:
+**Light variant + compact for shell:**
 ![figure-global-light](images/global-light.png?raw=true)
 *`open image in new tab to see it fullsize and sharp`*
 
-Dark variant + compact for shell:
+**Dark variant + compact for shell:**
 ![figure-global-dark](images/global-dark.png?raw=true)
 *`open image in new tab to see it fullsize and sharp`*
 
