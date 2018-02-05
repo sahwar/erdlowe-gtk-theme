@@ -55,7 +55,7 @@
 
 **Auto** *([screenshot](images/install.png?raw=true))*
 
-Copy/paste the following commands in user terminal and follow instructions:
+Copy/paste the following command in user terminal:
 
 `wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install.sh | sh`
 
