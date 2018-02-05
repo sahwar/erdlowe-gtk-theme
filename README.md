@@ -39,6 +39,9 @@
 - **Source Sans fonts**
   - `sudo zypper in adobe-source*pro-fonts` to install in openSUSE®
   
+- **Dconf** *(for install script)*
+  - `sudo zypper in dconf` to install in openSUSE®
+  
 - **GNOME Tweaks tool** & "User themes" extension *(could be already installed)*
 #
 #
