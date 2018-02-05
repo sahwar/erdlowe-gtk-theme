@@ -29,6 +29,8 @@
 #
 ## Requirements
 
+**`Install script can install them automatically if you use openSUSE®.`**
+
 - **GTK+** *(>=3.18, should be already installed)*
 
 - **Adwaita** *(default GNOME theme, should be already installed)*
@@ -57,8 +59,6 @@ Copy/paste this in user terminal and follow instructions:
 
 `wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/install-erdlowe.sh | sh`
 
-Select *"2) update"* instead of *"1) install"* if Erdlöwe is already installed.
-
 You may use an [alias in your bashrc](http://www.linuxhowtos.org/Tips%20and%20Tricks/command_aliases.htm) to call the script quickly.
 
 Screenshot of *install-erdlowe.sh* main page: [here](images/install.png?raw=true).
@@ -69,6 +69,8 @@ Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases).
 #
 #
 ## Suggestions
+
+**`Install script can install fonts and icons automatically if you use openSUSE®.`**
 
 - **Fonts:**
   - Window titles: Source Sans Pro bold 10
@@ -89,6 +91,8 @@ Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases).
 #
 #
 ## Extras
+
+**`Install script can install them automatically.`**
 
 **GNOME Terminal scheme:** *([screenshot](extras/erdlowe-terminal-screenshot.png?raw=true))*
 
