@@ -68,7 +68,7 @@ You may use a [function in your bashrc](http://tldp.org/HOWTO/Bash-Prog-Intro-HO
 
 **Manual**
 
-Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), download `erdlowe.tar.gz` then extract in themes folder.
+Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), download latest `erdlowe.tar.gz` then extract in themes folder.
 #
 #
 ## Suggestions
