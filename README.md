@@ -46,6 +46,8 @@
 
 /!\ Please check requirements before anything.
 
+Eventually, you could have to reboot after applying theme *(some GTK2 apps or Chrome for example)*.
+
 **Auto**
 
 Copy/paste this in user terminal and follow instructions:
