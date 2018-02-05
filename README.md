@@ -5,7 +5,6 @@
 [Overview](#overview) - [Requirements](#requirements) - [Installation](#installation) - [Suggestions](#suggestions) - [Extras](#extras) - [Screenshots](#screenshots) - [Credits](#credits) - [FAQ](#faq)
 #
 #
-#
 
 ## Overview
 
@@ -26,7 +25,8 @@
 | **-** | ![Erdlöwe](images/variants-standard.png?raw=true) | ![Erdlöwe-compact](images/variants-standard-compact.png?raw=true) |
 | **light** | ![Erdlöwe-light](images/variants-light.png?raw=true) | ![Erdlöwe-light-compact](images/variants-light-compact.png?raw=true) |
 | **dark** | ![Erdlöwe-dark](images/variants-dark.png?raw=true) | ![Erdlöwe-dark-compact](images/variants-dark-compact.png?raw=true) |
-
+#
+#
 ## Requirements
 
 - **GTK+** *(>=3.18, should be already installed)*
@@ -40,7 +40,8 @@
   - `sudo zypper in adobe-source*pro-fonts` to install in openSUSE®
   
 - **GNOME Tweaks tool** & "User themes" extension *(could be already installed)*
-
+#
+#
 ## Installation
 
 **First install**
@@ -54,7 +55,8 @@ Copy/paste this in user terminal and follow instructions:
 Copy/paste this in user terminal and follow instructions:
 
 `wget -qO- https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/update.sh | sh`
-
+#
+#
 ## Suggestions
 
 - **Fonts:**
@@ -72,8 +74,9 @@ Copy/paste this in user terminal and follow instructions:
   - [Remove Arrows](https://extensions.gnome.org/extension/800/remove-dropdown-arrows/)
   - [Overlay Icons](https://extensions.gnome.org/extension/302/windowoverlay-icons/)
   - [Notifications Alerts](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
-  - [Appfolders Manager](https://extensions.gnome.org/extension/1217/appfolders-manager/).
-
+  - [Appfolders Manager](https://extensions.gnome.org/extension/1217/appfolders-manager/)
+#
+#
 ## Extras
 
 **GNOME Terminal scheme:** *([screenshot](extras/erdlowe-terminal-screenshot.png?raw=true))*
@@ -83,7 +86,8 @@ Copy/paste this in user terminal and follow instructions:
 **Gedit color scheme:** *([screenshot](extras/erdlowe-gedit-screenshot.png?raw=true))*
 
 `sudo wget -P /usr/share/gtksourceview-3.0/styles https://raw.githubusercontent.com/DarthWound/erdlowe-theme/master/extras/erdlowe-gedit.xml`
-
+#
+#
 ## Screenshots
 
 **Standard variant + compact for shell:**
@@ -97,7 +101,8 @@ Copy/paste this in user terminal and follow instructions:
 **Dark variant + compact for shell:**
 ![figure-global-dark](images/global-dark.png?raw=true)
 *`open image in new tab to see it fullsize and sharp`*
-
+#
+#
 ## Credits
 
 - **Based on** [Materia](https://github.com/nana-4/materia-theme) by [nana-4](https://github.com/nana-4). Thank you so much for your impressive work and your kindness.
@@ -105,7 +110,8 @@ Copy/paste this in user terminal and follow instructions:
 - **Designed with** [openSUSE](https://www.opensuse.org/)® color palette for themes and [SUSE](https://www.suse.com/)® color palette for Terminal/Gedit schemes.
   - *openSUSE® branding guidelines -> [here](https://opensuse.github.io/branding-guidelines/)*
   - *SUSE® branding guidelines -> [here](https://www.suse.com/brandcentral/suse/identity.php)*
-
+#
+#
 ## FAQ
 
 - **How to report issues?**
