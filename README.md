@@ -29,7 +29,7 @@
 #
 ## Requirements
 
-**`Erdlöwe script can install them automatically if you use openSUSE®.`**
+> **`Erdlöwe script can install them automatically if you use openSUSE®.`**
 
 - **GTK+** *(>=3.18, should be already installed)*
 
@@ -76,7 +76,7 @@ Archives from manual method only provide theme files. All other stuff have to be
 #
 ## Suggestions
 
-**`Erdlöwe script can install icons automatically. Fonts too, see "Requirements".`**
+> **`Erdlöwe script can install icons automatically. Fonts too, see "Requirements".`**
 
 - **Fonts:**
   - Window titles: Source Sans Pro bold 10
@@ -98,7 +98,7 @@ Archives from manual method only provide theme files. All other stuff have to be
 #
 ## Extras
 
-**`Erdlöwe script can install them automatically.`**
+> **`Erdlöwe script can install them automatically.`**
 
 **GNOME Terminal scheme:** *([screenshot](extras/erdlowe-terminal-screenshot.png?raw=true))*
 
