@@ -15,8 +15,8 @@ cd materia-theme-master
 
 # STEP1
 
-printf "[1/11] Changing name...\n"sleep 2s
-
+printf "[1/11] Changing name...\n"
+sleep 2s
 
 sed -i '/Comment/!s/Materia/Erdlowe/g' src/*.theme
 
@@ -370,7 +370,7 @@ printf "[10/11] Installing new version...\n"
 sleep 2s
 
 # change theme name from materia to erdlowe
-# remove blocks about chrome, metacity, unity, xfw4, and glib-compile-resource
+# remove blocks about chrome, metacity, unity, xfwm4, and glib-compile-resource
 cat > install.sh << "EOF"
 #!/bin/bash
 #set -ueo pipefail
