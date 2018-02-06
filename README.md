@@ -1,6 +1,6 @@
 ![banner](artwork/erdlowegnomedesc_by_darthwound.png)
 #
-`VERSION 1.0-20180131 (X.X = Erdlöwe version - YYYYMMDD = Materia master build)`
+`VERSION 1.1-20180131 (X.X = Erdlöwe version - YYYYMMDD = Materia master build)`
 
 [Overview](#overview) - [Requirements](#requirements) - [Installation](#installation) - [Suggestions](#suggestions) - [Extras](#extras) - [Screenshots](#screenshots) - [Credits](#credits) - [FAQ](#faq)
 #
