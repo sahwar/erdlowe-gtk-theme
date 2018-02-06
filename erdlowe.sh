@@ -1,7 +1,8 @@
 #!/bin/bash
 # Erdlöwe theme by DarthWound - run
 
-version="v1.0-20180131"
+crtbld=$(cat /usr/share/themes/Erdlowe/version.txt)
+lstbld=$(wget -qO - 'https://github.com/DarthWound/erdlowe-theme/releases/latest' | grep -o 'download/v[0-9]\.[0-9]-[0-9]\{8\}' | tr -d '[download/]')
 
 gtk="/org/gnome/desktop/interface/gtk-theme"
 wm="/org/gnome/desktop/wm/preferences/theme"
@@ -17,7 +18,9 @@ installtheme() {
 	printf "Installing theme...\n"
 	sleep 2s
 	cd /usr/share/themes
-	sudo wget https://github.com/DarthWound/erdlowe-theme/releases/download/v1.0-20180131/erdlowe.tar.gz
+	sudo rm -rf Erdlowe*
+	sleep 4s
+	sudo wget https://github.com/DarthWound/erdlowe-theme/releases/download/$lstbld/erdlowe.tar.gz
 	sudo tar -xzf erdlowe.tar.gz
 	printf "Cleaning...\n"
 	sleep 4s
@@ -46,7 +49,7 @@ updatetheme() {
 	cd /usr/share/themes
 	sudo rm -rf Erdlowe*
 	sleep 4s
-	sudo wget https://github.com/DarthWound/erdlowe-theme/releases/download/v1.0-20180131/erdlowe.tar.gz
+	sudo wget https://github.com/DarthWound/erdlowe-theme/releases/download/$lstbld/erdlowe.tar.gz
 	sudo tar -xzf erdlowe.tar.gz
 	printf "Cleaning...\n"
 	sleep 4s
@@ -104,6 +107,12 @@ nukem() {
 	read -p "Done! Open Terminal settings to change its theme if you installed extras. Press ENTER to close."
 }
 
+changelog() {
+	printf "Opening web browser...\n"
+	sleep 2s
+	xdg-open https://github.com/DarthWound/erdlowe-theme/releases/latest
+}
+
 clear
 printf "Launching Erdlowe installation script..."
 sleep 2s
@@ -119,7 +128,13 @@ cat << "EOF"
 
                    a material openSUSE+GNOME theme                                               
 EOF
-printf "\n\n\n   BUILD $version\n
+if [ "$crtbld" != "$lstbld" ]
+	then
+		printf "\n\n\n   BUILD $crtbld\n   - BUILD $lstbld available!\n   - Type \"0\" to read changelog.\n   - Then proceed to update (option \"2\")."
+	else
+		printf "\n\n\n   BUILD $crtbld"
+fi
+printf "\n
    \e[1m1\e[0m => \e[1mInstall\e[0m (check dependencies before)
    \e[1m2\e[0m => \e[1mUpdate\e[0m (if Erdlowe is already installed)
    \e[1m3\e[0m => \e[1mGet required dependencies\e[0m (openSUSE only)
@@ -132,6 +147,11 @@ printf "\n\n\n   BUILD $version\n
 	printf "\n   \e[1mTYPE NUMBER OF SELECTED OPTION THEN PRESS ENTER:\e[0m "
 	read _slct
 	case $_slct in
+		0)
+			clear
+			changelog
+			sleep 2s
+		;;
 		1)
 			clear
 			installtheme
