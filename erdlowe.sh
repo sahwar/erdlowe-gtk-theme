@@ -130,7 +130,7 @@ cat << "EOF"
 EOF
 if [ "$crtbld" != "$lstbld" ]
 	then
-		printf "\n\n\n   BUILD $crtbld\n   - BUILD $lstbld available!\n   - Type \"0\" to read changelog.\n   - Then proceed to update (option \"2\")."
+		printf "\n\n\n   BUILD $crtbld\n   - BUILD $lstbld available!\n   - Type \"0\" to read changelog."
 	else
 		printf "\n\n\n   BUILD $crtbld"
 fi
