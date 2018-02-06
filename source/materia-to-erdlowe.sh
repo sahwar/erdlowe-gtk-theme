@@ -15,23 +15,15 @@ cd materia-theme-master
 
 # STEP1
 
-sleep 3s
-printf "[1/11] Changing name...\n"
+printf "[1/11] Changing name...\n"sleep 2s
+
 
 sed -i '/Comment/!s/Materia/Erdlowe/g' src/*.theme
 
 # STEP2
 
-sleep 3s
-#printf "[2/11] Editing assets...\n"
-
-#sed -i 's/#FF4081/#73BA25/g' src/gtk/assets.svg
-#sed -i 's/#FF4081/#73BA25/g' src/gtk-2.0/assets{,-dark}.svg
-#sed -i 's/#42A5F5/#73BA25/g' src/gtk-2.0/assets{,-dark}.svg
-#sed -i 's/#FF4081/#73BA25/g' src/gnome-shell/assets{,-dark}/*.svg
-#sed -i 's/#FF5252/#BB2525/g' src/gnome-shell/assets{,-dark}/*.svg
-
 printf "[2/11] Editing assets...\n"
+sleep 2s
 
 sed -i 's/#FF4081/#35B9AB/g' src/gtk/assets.svg
 sed -i 's/#FF4081/#35B9AB/g' src/gtk-2.0/assets{,-dark}.svg
@@ -48,8 +40,8 @@ sed -i 's/#FF5252/#BB2525/g' src/gnome-shell/assets{,-dark}/*.svg
 
 # STEP3
 
-sleep 3s
 printf "[3/11] Changing shell fonts and icons...\n"
+sleep 2s
 
 sed -i 's/Roboto, "M+ 1c"/Source Sans Pro/g' src/_sass/gnome-shell/_variables.scss
 sed -i 's/"M+ 1c", Roboto/Source Sans Pro/g' src/_sass/gnome-shell/_variables.scss
@@ -57,8 +49,8 @@ sed -i 's/symbolic/regular/g' src/_sass/gnome-shell/_common{-3.18,-3.24,-3.26}.s
 
 # STEP4
 
-sleep 3s
 printf "[4/11] Creating new color palette...\n"
+sleep 2s
 
 cat > src/_sass/_color-palette.scss << "EOF"
 // based color palette:
@@ -130,8 +122,8 @@ EOF
 
 # STEP5
 
-sleep 3s
 printf "[5/11] Using new color palette in GTK3 and GS...\n"
+sleep 2s
 
 cat > src/_sass/_colors.scss << "EOF"
 // When color definition differs for dark and light variant,
@@ -243,8 +235,8 @@ EOF
 
 # STEP6
 
-sleep 3s
 printf "[6/11] Using new color palette in GTK2...\n"
+sleep 2s
 
 cat > src/gtk-2.0/gtkrc << "EOF"
 # Based on Bridge by ScionicSpectre and Adwaita by GNOME
@@ -353,29 +345,29 @@ EOF
 
 # STEP7
 
-sleep 3s
 printf "[7/11] Rendering new assets...\n"
+sleep 2s
 
 ./render-assets.sh
 
 # STEP8
 
-sleep 3s
 printf "[8/11] Rendering new styles...\n"
+sleep 2s
 
 ./parse-sass.sh
 
 # STEP9
 
-sleep 3s
 printf "[9/11] Removing old version...\n"
+sleep 2s
 
 rm -rf ~/.themes/Erdlowe*
 
 # STEP10
 
-sleep 3s
 printf "[10/11] Installing new version...\n"
+sleep 2s
 
 # change theme name from materia to erdlowe
 # remove blocks about chrome, metacity, unity, xfw4, and glib-compile-resource
@@ -570,18 +562,20 @@ mkdir ~/.themes
 
 # STEP11
 
-sleep 3s
 printf "[11/11] Creating release archive...\n"
+sleep 2s
 
 cd ..
 rm -rf release
 mkdir release
 cd release
 cp -r ~/.themes/Erdlowe{,-compact,-light,-light-compact,-dark,-dark-compact} $PWD
+read -p "Release version (X.X-YYYYMMDD): "
+echo "v$REPLY" > $PWD/Erdlowe/version.txt
 tar -czf erdlowe.tar.gz Erdlowe{,-compact,-light,-light-compact,-dark,-dark-compact}
 rm -rf ~/.themes/Erdlowe{,-compact,-light,-light-compact,-dark,-dark-compact}
 
 # END
 
-sleep 3s
+sleep 2s
 printf "SUCCESS - archive is in $PWD\n"
