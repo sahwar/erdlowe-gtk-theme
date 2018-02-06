@@ -61,11 +61,17 @@ Copy/paste the following command in user terminal:
 
 Then, still in user terminal, run `~/.bin/erdlowe.sh`.
 
+This method is the one you should use because script...
+- handles installation and updates automatically
+- tells you when a new release is available
+- makes changes for you if you want to
+- offers you to install requirements *(openSUSE® only)*, suggestions, and extras
+
 **Manual**
 
 Go in [releases tab](https://github.com/DarthWound/erdlowe-theme/releases), download latest `erdlowe.tar.gz` then extract in themes folder.
 
-Archives from manual method only provide theme files. All other stuff have to be installed manually too.
+Archives from manual method only provide theme files. All other stuff have to be done manually too.
 #
 #
 ## Suggestions
