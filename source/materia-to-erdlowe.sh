@@ -1,7 +1,8 @@
 #!/bin/bash
 # Erdlöwe theme by DarthWound
+# https://github.com/DarthWound/erdlowe-gtk-theme
 # Use this script to get Materia and build the changes
-# Works with materia-master 2018/01/31 - caution if used with more recent files
+# Works with materia-master 2018/03/09 - caution if used with more recent files
 
 # START
 
@@ -30,7 +31,7 @@ sed -i 's/#FF4081/#35B9AB/g' src/gtk-2.0/assets{,-dark}.svg
 sed -i 's/#42A5F5/#73BA25/g' src/gtk-2.0/assets{,-dark}.svg
 sed -i 's/#000000/#173F4F/g' src/gtk-2.0/assets{,-dark}.svg
 sed -i 's/#F5F5F5/#EEEEEE/g' src/gtk-2.0/assets.svg
-sed -i 's/#FAFAFA/#FFFFFF/g' src/gtk-2.0/assets.svg
+sed -i 's/#FAFAFA/#FEFEFE/g' src/gtk-2.0/assets.svg
 sed -i 's/#333e43/#12313D/g' src/gtk-2.0/assets-dark.svg
 sed -i 's/#414f56/#173F4F/g' src/gtk-2.0/assets-dark.svg
 sed -i 's/#3b484e/#173F4F/g' src/gtk-2.0/assets-dark.svg
@@ -376,6 +377,7 @@ cat > install.sh << "EOF"
 #set -ueo pipefail
 #set -x
 
+SRC_DIR=`dirname "$0"`
 DEST_DIR=/usr/share/themes
 THEME_NAME=Erdlowe
 COLOR_VARIANTS=('' '-dark' '-light')
@@ -433,35 +435,35 @@ install() {
 
   echo "Installing '${THEME_DIR}'..."
 
-  mkdir -p                                                                      ${THEME_DIR}
-  cp -ur COPYING                                                                ${THEME_DIR}
-  cp -ur src/index${color}${size}.theme                                         ${THEME_DIR}/index.theme
+  mkdir -p                                                                           ${THEME_DIR}
+  cp -ur ${SRC_DIR}/COPYING                                                          ${THEME_DIR}
+  cp -ur ${SRC_DIR}/src/index${color}${size}.theme                                   ${THEME_DIR}/index.theme
 
-  mkdir -p                                                                      ${THEME_DIR}/gnome-shell
-  cp -ur src/gnome-shell/{*.svg,extensions,noise-texture.png,pad-osd.css}       ${THEME_DIR}/gnome-shell
-  cp -ur src/gnome-shell/assets${ELSE_DARK}                                     ${THEME_DIR}/gnome-shell/assets
-  cp -ur src/gnome-shell/${GS_VERSION}/gnome-shell${color}${size}.css           ${THEME_DIR}/gnome-shell/gnome-shell.css
+  mkdir -p                                                                           ${THEME_DIR}/gnome-shell
+  cp -ur ${SRC_DIR}/src/gnome-shell/{*.svg,extensions,noise-texture.png,pad-osd.css} ${THEME_DIR}/gnome-shell
+  cp -ur ${SRC_DIR}/src/gnome-shell/assets${ELSE_DARK}                               ${THEME_DIR}/gnome-shell/assets
+  cp -ur ${SRC_DIR}/src/gnome-shell/${GS_VERSION}/gnome-shell${color}${size}.css     ${THEME_DIR}/gnome-shell/gnome-shell.css
 
-  mkdir -p                                                                      ${THEME_DIR}/gtk-2.0
-  cp -ur src/gtk-2.0/{apps.rc,hacks.rc,main.rc}                                 ${THEME_DIR}/gtk-2.0
-  cp -ur src/gtk-2.0/assets${ELSE_DARK}                                         ${THEME_DIR}/gtk-2.0/assets
-  cp -ur src/gtk-2.0/gtkrc${color}                                              ${THEME_DIR}/gtk-2.0/gtkrc
+  mkdir -p                                                                           ${THEME_DIR}/gtk-2.0
+  cp -ur ${SRC_DIR}/src/gtk-2.0/{apps.rc,hacks.rc,main.rc}                           ${THEME_DIR}/gtk-2.0
+  cp -ur ${SRC_DIR}/src/gtk-2.0/assets${ELSE_DARK}                                   ${THEME_DIR}/gtk-2.0/assets
+  cp -ur ${SRC_DIR}/src/gtk-2.0/gtkrc${color}                                        ${THEME_DIR}/gtk-2.0/gtkrc
 
-  cp -ur src/gtk/assets                                                         ${THEME_DIR}/gtk-assets
+  cp -ur ${SRC_DIR}/src/gtk/assets                                                   ${THEME_DIR}/gtk-assets
 
   for version in "${GTK_VERSIONS[@]}"; do
     if [[ ${version} == '3.18' ]]; then
-      mkdir -p                                                                  ${THEME_DIR}/gtk-3.0
-      ln -sf ../gtk-assets                                                      ${THEME_DIR}/gtk-3.0/assets
-      cp -ur src/gtk/${version}/gtk${color}.css                                 ${THEME_DIR}/gtk-3.0/gtk.css
+      mkdir -p                                                                       ${THEME_DIR}/gtk-3.0
+      ln -sf ../gtk-assets                                                           ${THEME_DIR}/gtk-3.0/assets
+      cp -ur ${SRC_DIR}/src/gtk/${version}/gtk${color}.css                           ${THEME_DIR}/gtk-3.0/gtk.css
       [[ ${color} != '-dark' ]] && \
-      cp -ur src/gtk/${version}/gtk-dark.css                                    ${THEME_DIR}/gtk-3.0/gtk-dark.css
+      cp -ur ${SRC_DIR}/src/gtk/${version}/gtk-dark.css                              ${THEME_DIR}/gtk-3.0/gtk-dark.css
     else
-      mkdir -p                                                                  ${THEME_DIR}/gtk-${version}
-      ln -sf ../gtk-assets                                                      ${THEME_DIR}/gtk-${version}/assets
-      cp -ur src/gtk/${version}/gtk${color}${size}.css                          ${THEME_DIR}/gtk-${version}/gtk.css
+      mkdir -p                                                                       ${THEME_DIR}/gtk-${version}
+      ln -sf ../gtk-assets                                                           ${THEME_DIR}/gtk-${version}/assets
+      cp -ur ${SRC_DIR}/src/gtk/${version}/gtk${color}${size}.css                    ${THEME_DIR}/gtk-${version}/gtk.css
       [[ ${color} != '-dark' ]] && \
-      cp -ur src/gtk/${version}/gtk-dark${size}.css                             ${THEME_DIR}/gtk-${version}/gtk-dark.css
+      cp -ur ${SRC_DIR}/src/gtk/${version}/gtk-dark${size}.css                       ${THEME_DIR}/gtk-${version}/gtk-dark.css
     fi
   done
 }
